@@ -5,7 +5,7 @@ Reflectively load and execute an x64 Portable Executable in-memory. It does not 
 Finally, it produces a self-contained executable so no ugly command lines to be inspected by Defender.  
 
 ## Usage  
-1. [Prepare a Go environment](https://golang.org/dl/) to build the reflect-pe on Windows. You cannot cross compile it on a Linux/Unix machine because it uses Windows specific code.  
+1. [Prepare a Go environment](https://golang.org/dl/) to build the reflect-pe on Windows.
 
 2. Prepare your `config.yml` file (see below)
 
@@ -15,7 +15,8 @@ git clone https://github.com/ayoul3/reflect-pe
 cd reflect-pe
 go build -v .
 ```
-Run it and enjoy
+Run it and enjoy.
+*Ps: If you compile on a platform other than Windows, make sure to add the GOOS=windows and GOARCH=amd64 env variables*
 
 ## Config
 ```
